@@ -1,0 +1,105 @@
+--ORDERS
+
+INSERT INTO ORDERS
+VALUES(1001,'test1', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1002,'test2', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1003,'test3', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1004,'test4', 222, TO_DATE('2016/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2016/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1005,'test5', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1006,'test6', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1007,'test7', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1008,'test8', 222, TO_DATE('2016/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2016/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1009,'test9', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+INSERT INTO ORDERS
+VALUES(1010,'test10', 140, TO_DATE('2017/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2017/05/03 23:02:44', 'yyyy/mm/dd hh24:mi:ss'));
+
+
+--PRODUCTS
+
+
+INSERT INTO PRODUCTS
+VALUES(1001,'test1', 'test1', 10);
+
+INSERT INTO PRODUCTS
+VALUES(1002,'test2', 'test1', 20);
+
+INSERT INTO PRODUCTS
+VALUES(1003,'test3', 'test1', 30);
+
+INSERT INTO PRODUCTS
+VALUES(1004,'test4', 'test1', 40);
+
+INSERT INTO PRODUCTS
+VALUES(1005,'test5', 'test1', 50);
+
+INSERT INTO PRODUCTS
+VALUES(1006,'test6', 'test1', 60);
+
+INSERT INTO PRODUCTS
+VALUES(1007,'test7', 'test1', 70);
+
+INSERT INTO PRODUCTS
+VALUES(1008,'test8', 'test1', 80);
+
+INSERT INTO PRODUCTS
+VALUES(1009,'test9', 'test1', 90);
+
+INSERT INTO PRODUCTS
+VALUES(1010,'test10', 'test1', 100);
+
+
+
+
+INSERT INTO PRODUCTS
+VALUES(1001, 'candy', 'test1', 50);
+
+INSERT INTO PRODUCTS
+VALUES(1002, 't-shirt', 'china11', 42);
+
+INSERT INTO PRODUCTS
+VALUES(1003, 'candy', 'test1', 50);
+
+
+--SELECT FROM PRODUCTS
+
+
+SELECT * FROM PRODUCTS WHERE COST_PRICE = 50 AND PRODUCT_NAME = 'toy123';
+SELECT * FROM PRODUCTS WHERE ID = 1005 OR  COST_PRICE < 50;
+SELECT * FROM PRODUCTS WHERE ID > 1005 AND MANUFACTURER_NAME = 'someManufacturer';
+SELECT * FROM PRODUCTS;
+
+--UPDATE PRODUCTS
+
+UPDATE PRODUCTS SET MANUFACTURER_NAME = 'china' WHERE PRODUCT_NAME = 't-shirt';
+
+--DELETE PRODUCTS
+
+DELETE FROM PRODUCTS WHERE ID < 1050;
+
+
+
+
+
+
+
+
+
+
+
