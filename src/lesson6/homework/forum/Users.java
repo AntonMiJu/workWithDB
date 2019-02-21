@@ -1,4 +1,4 @@
-package lesson6.homework;
+package lesson6.homework.forum;
 
 import java.util.Date;
 
